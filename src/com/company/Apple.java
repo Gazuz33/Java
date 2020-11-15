@@ -2,9 +2,9 @@ package com.company;
 
 public class Apple extends Food {
     private  String size;
-    public Apple (String size,Double callories)
+    public Apple (String size)
     {
-        super("Apple",callories);
+        super("Apple");
         this.size=size;
     }
 
@@ -17,13 +17,13 @@ public class Apple extends Food {
     public void setSize(String size) {
         this.size = size;
     }
-    public boolean equals(Object arg0) {
+/*    public boolean equals(Object arg0) {
         if (super.equals(arg0)) { // Шаг 1
             if (!(arg0 instanceof Apple)) return false; // Шаг 2
             return size.equals(((Apple)arg0).size); // Шаг 3
         } else
             return false;
-    }
+    }*/
     public String toString() {
         return super.toString() + " size '" + size.toUpperCase() + "'";
     }
